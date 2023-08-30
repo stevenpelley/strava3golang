@@ -16,5 +16,8 @@ openapi-generator:
 readme:
 	cat README_HEADER.md README.md > README.md.tmp; mv README.md.tmp README.md
 
+gitignore:
+	cat .gitignore_header .gitignore > .gitignore.tmp; mv .gitignore.tmp .gitignore
+
 clean:
 	find . ! -name 'Makefile' ! -name 'README.md' ! -name 'LICENSE' ! -name '.git' ! -name '.' ! -name 'README_HEADER.md' -maxdepth 1 -exec rm -rf {} +

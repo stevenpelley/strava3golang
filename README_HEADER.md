@@ -7,5 +7,7 @@ Strava uses the same string values in multiple enums.  Golang, which has no buil
 
 To use this client you will first need to perform oauth2 authorization, create an http client with the oauth2 token, and assign this client into the strava HTTPClient struct.  I use github.com/stevenpelley/oauth2-accesstoken-golang to create a token for development use.
 
+See example/athlete for an example.  This assumes you have the input oauth_client_config.json used in github.com/stevenpelley/oauth2-accesstoken-golang as well as the token.json that results.  These files are both listed in .gitignore to prevent commiting secrets.
+
 What follows is the README generated from the strava swagger itself.
 
